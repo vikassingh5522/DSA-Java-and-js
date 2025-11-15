@@ -1,8 +1,8 @@
 public class MinMaxEfficient {
     public static void main(String[] args) {
-        int[] arr = {10, 20, 30, 40, 0, 70, 80, 90, 5};
+        int[] arr = { 10, 20, 30, 40, 0, 70, 80, 90, 5 };
         int n = arr.length;
-        
+
         int min, max, i;
 
         // If n is even
@@ -24,11 +24,15 @@ public class MinMaxEfficient {
         // Process pairs
         while (i < n - 1) {
             if (arr[i] > arr[i + 1]) {
-                if (arr[i] > max) max = arr[i];
-                if (arr[i + 1] < min) min = arr[i + 1];
+                if (arr[i] > max)
+                    max = arr[i];
+                if (arr[i + 1] < min)
+                    min = arr[i + 1];
             } else {
-                if (arr[i + 1] > max) max = arr[i + 1];
-                if (arr[i] < min) min = arr[i];
+                if (arr[i + 1] > max)
+                    max = arr[i + 1];
+                if (arr[i] < min)
+                    min = arr[i];
             }
             i += 2;
         }

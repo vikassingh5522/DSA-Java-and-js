@@ -2,9 +2,9 @@ import java.util.Arrays;
 
 public class Merge {
     public static void main(String[] args) {
-        
-        int arr1[] = {1, 2, 3, 5, 6, 8};
-        int arr2[] = {4, 5, 6, 8};
+
+        int arr1[] = { 1, 2, 3, 5, 6, 8 };
+        int arr2[] = { 4, 5, 6, 8 };
 
         // merged array with size = arr1 + arr2
         int Merg[] = new int[arr1.length + arr2.length];

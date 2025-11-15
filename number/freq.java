@@ -2,7 +2,7 @@ public class freq {
 
     public static void main(String[] args) {
         
-        String str = "ii amm vikas ";
+        String str = "iii amm vikas ";
 
         // Array to store frequency counts. We assume extended ASCII (256 chars).
         int[] freq = new int[256];  

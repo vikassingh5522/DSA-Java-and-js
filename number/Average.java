@@ -13,6 +13,7 @@ public class Average {
             no = sc.nextInt();
             sum = sum + no;
         }
+        
         average = sum / count;
         System.out.println("sum of all numbers is : " + sum);
         System.out.println("average  of all numbers is : " + average);
