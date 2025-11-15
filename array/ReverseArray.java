@@ -36,12 +36,12 @@ public class ReverseArray {
 
         System.out.println("enter the size of arr : ");
 
-        int size = sc.nextInt();
+        int n = sc.nextInt();
 
-        int arr[] = new int[size];
+        int arr[] = new int[n];
 
         System.out.println("enter the ele :");
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
