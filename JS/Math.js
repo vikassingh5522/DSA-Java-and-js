@@ -29,3 +29,5 @@ console.log(Math.random());
 
 // 10 --> toFixed (correct usage)
 console.log((47.888).toFixed(2));  // "47.89"
+
+
