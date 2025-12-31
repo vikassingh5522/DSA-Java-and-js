@@ -1,3 +1,4 @@
+
 public class Binareg {
     public static void main(String[] args) {
         
