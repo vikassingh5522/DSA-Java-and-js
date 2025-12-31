@@ -1,7 +1,7 @@
 public class palindromsNO {
 
     public static void main(String[] args) {
-          String str = "madam";   // try "madam"
+        String str = "madam"; // try "madam"
         char[] ch = str.toCharArray();
 
         int start = 0;
@@ -24,7 +24,4 @@ public class palindromsNO {
         }
     }
 
-
-   
-
-    }
+}
