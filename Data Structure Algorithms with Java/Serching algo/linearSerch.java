@@ -12,6 +12,8 @@ public class linearSerch {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the search element:");
         item = sc.nextInt();
+
+
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == item) {
                 System.out.println("Element found at index: " + i);
@@ -21,6 +23,7 @@ public class linearSerch {
             System.out.println("Element not found.");
         }
 
+        
         // finding the element
 
         // String [] arr = { "apple", "banana", "cherry", "date", "elderberry", "fig" };

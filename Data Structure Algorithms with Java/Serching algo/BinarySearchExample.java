@@ -11,6 +11,7 @@ public class BinarySearchExample {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number to search: ");
+        
         search = scanner.nextInt();
 
         boolean found = false;
@@ -30,8 +31,6 @@ public class BinarySearchExample {
         if (!found) {
             System.out.println("Element not found.");
         }
-
-
         scanner.close();
     }
 
