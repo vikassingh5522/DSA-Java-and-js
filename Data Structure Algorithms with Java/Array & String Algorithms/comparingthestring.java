@@ -5,6 +5,9 @@ public class comparingthestring {
         String s1 = "vikas";
         String s2 = "raj";
 
+
+        // in java the string are object .
+
         // s1 > s2 => +ve value
         // s1 == s2 => 0
         // s1 < s2 => -ve value
