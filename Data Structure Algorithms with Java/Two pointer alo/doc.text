@@ -1,0 +1,78 @@
+Here is **one very easy two-pointer array example**, explained **step by step using pointers `i` and `j`**, in simple language.
+
+---
+
+## Example Problem (Very Easy)
+
+**Problem:**
+Check whether a **sorted array** contains **two numbers whose sum is 10**.
+
+**Array:**
+
+```
+A = [1, 2, 3, 7, 8]
+```
+
+---
+
+## Step 1: Initialize the Two Pointers
+
+* `i` → starts at the **beginning**
+* `j` → starts at the **end**
+
+```
+Index:  0  1  2  3  4
+Array:  1  2  3  7  8
+         i           j
+```
+
+---
+
+## Step 2: Move the Pointers Step by Step
+
+### 🔹 Step 1
+
+* `A[i] + A[j] = 1 + 8 = 9`
+* **9 < 10** → sum is too small
+* Move `i` **one step forward**
+
+```
+Index:  0  1  2  3  4
+Array:  1  2  3  7  8
+            i        j
+```
+
+---
+
+### 🔹 Step 2
+
+* `A[i] + A[j] = 2 + 8 = 10`
+* **10 == target** ✅
+* Pair found!
+
+---
+
+## Final Answer
+
+The two numbers are:
+
+```
+2 and 8
+```
+
+---
+
+## Why `i` and `j` Move Like This (Easy Explanation)
+
+* If the **sum is too small**, increase it → move `i` right
+* If the **sum is too large**, decrease it → move `j` left
+* Because the array is **sorted**, this always works correctly
+
+---
+
+## One-Line Definition (Very Simple)
+
+> The two-pointer method uses `i` and `j` to scan an array from both ends and adjust them step by step to find the answer efficiently.
+
+---
+
