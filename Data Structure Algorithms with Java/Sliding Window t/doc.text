@@ -17,7 +17,9 @@ Here is the **clearest and simplest way to understand the main difference**:
 
 
 
-r Longest Substring Without Repeating Characters, including brute force, better (two pointers), and optimal (sliding window)
+eg
+
+ Longest Substring Without Repeating Characters, including brute force, better (two pointers), and optimal (sliding window)
 
 public class LongestSubstringWithoutRepeating {
 
