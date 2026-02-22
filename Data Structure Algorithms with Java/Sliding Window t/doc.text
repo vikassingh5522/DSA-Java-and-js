@@ -113,3 +113,5 @@ public class LongestSubstringWithoutRepeating {
 Brute Force	Nested loops	O(n³)
 Better	Two pointers	O(n²)
 Optimal	Sliding window	O(n)
+
+These are all the growth force, better force, pointer, all the stuff.  
