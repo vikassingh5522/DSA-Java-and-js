@@ -21,6 +21,7 @@ public class NonReating {
 
         return '-';
     }
+
      public static void main(String[] args){
 
         System.out.println(firstnon("aabbccdeff"));
