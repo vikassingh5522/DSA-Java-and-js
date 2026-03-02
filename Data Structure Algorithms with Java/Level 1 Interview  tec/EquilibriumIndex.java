@@ -11,22 +11,17 @@ public class EquilibriumIndex {
 
         System.out.print("Enter the size of array: ");
         int n = sc.nextInt();
-
         int[] arr = new int[n];
-
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-
         // Total sum of array
         int totalSum = 0;
         for (int x : arr) {
             totalSum += x;
         }
-
         // Left sum
         int leftSum = 0;
-
         for (int i = 0; i < n; i++) {
             int rightSum = totalSum - leftSum - arr[i];
 
@@ -35,10 +30,8 @@ public class EquilibriumIndex {
                 sc.close();
                 return;
             }
-
             leftSum += arr[i];
         }
-
         System.out.println(-1);
         sc.close();
     }
