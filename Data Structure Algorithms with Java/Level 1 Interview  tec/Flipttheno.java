@@ -11,7 +11,14 @@ public class Flipttheno {
         int goal = sc.nextInt();
 
         int no = start ^ goal;
-        System.out.println(Integer.bitCount(no));
-
+        // not usng ths meth
+        // System.out.println(Integer.bitCount(no));
+        int count = 0;
+        while (no !=0) {
+            no = no & (no-1);
+            count++;
+        }
+        
+        System.out.println(count);
     }
 }
