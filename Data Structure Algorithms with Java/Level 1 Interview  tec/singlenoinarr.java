@@ -1,42 +1,50 @@
-
 import java.util.*;
 
-public class singlenoinarr {
+public class SingleNoInArr {
+
     public static void main(String[] args) {
 
-        // using arr
-        // int arr[] = {4,1,2,1,2} ;
-        // int no = arr.length;
-
-        int result = 0;
-
-        // ussing input 
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter the size of arr:");
-        int no = sc.nextInt();
 
-        int arr[] = new int[no];
+        // Input from user
+        System.out.print("Enter size of array: ");
+        int n = sc.nextInt();
 
-        System.out.println("enter the the no :");
-        for (int i = 0; i < no; i++) {
+        int arr[] = new int[n];
+
+        System.out.println("Enter array elements:");
+        for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
-        HashMap<Integer, Integer> map = new HashMap();
+        // -------- Method 1 : XOR (Optimal) --------
+        int xor = 0;
 
-        for (int i = 0; i < no; i++) {
-            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+        for (int num : arr) {
+            xor = xor ^  num;
         }
 
-        for (int i = 0; i < no; i++) {
-            if (map.get(arr[i]) == 1) {
-                result = arr[i];
+        System.out.println("Single number using XOR: " + xor);
+
+
+        // -------- Method 2 : HashMap --------
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for (int num : arr) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+
+        int result = 0;
+
+        for (int num : arr) {
+            if (map.get(num) == 1) {
+                result = num;
                 break;
             }
         }
 
-        System.out.println(result);
+       System.out.println("Single number using HashMap: " + result);
 
+        sc.close();
     }
-
 }
