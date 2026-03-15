@@ -1,7 +1,7 @@
 public class islandperes {
 
-    static int perimeter = 0;   // ✅ CHANGE: moved perimeter to class level
-    static int R, C;            // ✅ CHANGE: declare R and C globally
+    static int perimeter = 0;   //  CHANGE: moved perimeter to class level
+    static int R, C;            //  CHANGE: declare R and C globally
 
     public static void main(String[] args){
 
@@ -11,10 +11,10 @@ public class islandperes {
         System.out.println(result);
     }
 
-    public static int islandPerimeter(int[][] grid) { // ✅ CHANGE: static
+    public static int islandPerimeter(int[][] grid) { //  CHANGE: static
 
-        R = grid.length;          // ✅ CHANGE: assign global R
-        C = grid[0].length;       // ✅ CHANGE: fixed grid[0].length
+        R = grid.length;          //  CHANGE: assign global R
+        C = grid[0].length;       //  CHANGE: fixed grid[0].length
 
         for(int i = 0 ; i < R; i++){
             for(int j = 0; j < C ; j++){
@@ -27,7 +27,7 @@ public class islandperes {
         return -1;
     }
 
-    public static void dfs(int [][] grid, int  i , int  j ){ // ✅ CHANGE: static
+    public static void dfs(int [][] grid, int  i , int  j ){ //  CHANGE: static
 
         if(i < 0 || i >= R || j < 0 || j >= C || grid[i][j] == 0){ 
             perimeter++;      // edge contributes to perimeter
