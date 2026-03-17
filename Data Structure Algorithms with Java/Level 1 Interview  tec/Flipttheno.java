@@ -20,5 +20,6 @@ public class Flipttheno {
         }
         
         System.out.println(count);
+        sc.close();
     }
 }

@@ -27,5 +27,7 @@ public class gemoritric {
         }
         System.out.print("ans  : " +result);
 
+        sc.close();
+
      }
 }

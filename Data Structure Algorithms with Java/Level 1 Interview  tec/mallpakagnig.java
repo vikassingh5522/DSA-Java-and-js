@@ -25,6 +25,8 @@ public class mallpakagnig{
         }
         int result = rowwithmaxocc(matrix,R,C);
         System.out.print(result+1);
+
+        sc.close();
     }
 
     public static int rowwithmaxocc(int matrix[][] ,int  R,int C){
@@ -45,5 +47,8 @@ public class mallpakagnig{
             }
         }
         return rowIndex;
+
+
     }
+   
 }
