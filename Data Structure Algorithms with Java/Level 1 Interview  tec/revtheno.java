@@ -1,3 +1,5 @@
+// Reverse the string by using an input output.  
+
 import java.util.*;
 
 public class revtheno{
@@ -9,32 +11,32 @@ public class revtheno{
         System.out.print("enter the size of arr :");
         int no = sc.nextInt();
 
-        int arr[] = new int[no];
+        ArrayList<Integer> list = new ArrayList<>();
 
         // take array input
         System.out.print("enter the elements:");
         for(int i = 0; i < no; i++){
-            arr[i] = sc.nextInt();
+            list.add(sc.nextInt());
         }
 
         int start = 0;
-        int end = arr.length - 1;
+        int end = list.size() - 1;
 
         while (start < end) {
 
-            // ✔ FIX 2: use arr (not no)
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
+            // use arr (not no)
+            int temp = list.get(start);
+            list.set(start,list.get(end));
+        list.set(end ,temp);
 
             start++;
             end--;
         }
 
-        // ✔ ADDED: print reversed array
+        //  print reversed array
         System.out.println("Reversed array:");
         for(int i = 0; i < no; i++){
-            System.out.print(arr[i] + " ");
+            System.out.print(list.get(i) + " ");
         }
 
         sc.close();
