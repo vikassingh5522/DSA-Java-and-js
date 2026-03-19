@@ -1,35 +1,47 @@
-import java.util.Scanner;
+
+
+import java.util.*;
 
 public class ReverseString {
 
-    public static void main(String[] args) {
+     public static void main(String[] args){
+ 
+          Scanner sc = new Scanner(System.in);
 
-        Scanner sc = new Scanner(System.in);
+          System.out.println("enter the string to rev :");
+          String str = sc.nextLine();
 
-        System.out.print("Enter a string: ");
-        String str = sc.nextLine();
+          char []arr = str.toCharArray();
 
-        char[] arr = str.toCharArray();
+          int start = 0;
+          int end = arr.length - 1 ;
+          char temp;
 
-        int start = 0;
-        int end = arr.length - 1;
+          while (start < end) {
+               temp = arr[start];
+              arr[start] = arr[end];
+              arr[end] = temp;
 
-        while(start < end){
+              start++;
+              end--;
+            
+          }
 
-            char temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
 
-            start++;
-            end--;
-        }
+         
+          for(char rev :arr ){
+            System.out.print(rev);
+          }
 
-        System.out.print("Reversed string: ");
+          sc.close();
 
-        for(char c : arr){
-            System.out.print(c);
-        }
 
-        sc.close();
-    }
+     }
 }
+
+
+
+
+
+
+

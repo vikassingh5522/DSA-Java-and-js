@@ -1,5 +1,5 @@
 // Reverse the string by using an input output.  
-
+/* 
 import java.util.*;
 
 public class revtheno{
@@ -42,3 +42,7 @@ public class revtheno{
         sc.close();
     }
 }
+
+*/
+
+// using arr
