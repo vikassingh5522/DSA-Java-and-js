@@ -26,8 +26,6 @@ public class plindrome {
             isPlin(arr[i]);
         }
        */
-
-
         Scanner sc = new Scanner(System.in);
 
         System.out.println(" enter  the  no:");

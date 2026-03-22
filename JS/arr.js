@@ -1,10 +1,22 @@
 
 
-const arr = [ 1, 2, 3, 4, 5,6 ];
+// console.log(1 + "2" + 3);
+// 123
 
-const result = arr 
-          .filter((value, index) => index % 2 == 0) // even no 
-          .map(num =>num * num)
-        //   .reduce((total ,num) => total + num , 0);
-          console.log(result);
+// let a;
+// console.log(a == undefined, a===undefined);
+// true true 
 
+// function test(){
+//   console.log(x);
+//   var x =5;
+// }
+// test();
+// undefined
+
+// confirm.log([1,2] == [1,2]);  flase --> refrence not same
+
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(() => console.log(i), 1000);
+// }
+//  3 3 3 
