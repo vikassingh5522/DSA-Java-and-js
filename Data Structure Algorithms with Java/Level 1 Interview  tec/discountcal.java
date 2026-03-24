@@ -2,8 +2,7 @@
 
 
 
-//  this is tcs  questiion 
-
+//    This is the TCS questions.
 // given a purchees amount , apply a discound base  on lab and print the final payable amount rounded to 2 decimal places. 
 
 
