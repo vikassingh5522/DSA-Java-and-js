@@ -1,3 +1,7 @@
+
+
+//  ths qoestion are string  input and output
+
 import java.util.Scanner;
 
 public class strr {
