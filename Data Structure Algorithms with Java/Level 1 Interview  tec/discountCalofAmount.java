@@ -19,7 +19,7 @@
 
 import java.util.Scanner;
 
-public class discountCal { 
+public class discountCalofAmount { 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
