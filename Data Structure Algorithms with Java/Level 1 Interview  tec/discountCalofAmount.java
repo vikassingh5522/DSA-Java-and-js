@@ -4,8 +4,6 @@
 
 //    This is the TCS questions.
 // given a purchees amount , apply a discound base  on lab and print the final payable amount rounded to 2 decimal places. 
-
-
 // 5% dis  amout < 1000;
 //1000<= amount < 5000;
 //amount >= 5000;
