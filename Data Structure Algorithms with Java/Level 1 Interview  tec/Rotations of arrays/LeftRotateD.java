@@ -5,11 +5,11 @@ class LeftRotateD {
     // Function to reverse part of array
     static void reverse(int[] arr, int start, int end) {
         while (start < end) {
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            start++;
-            end--;
+            int temp = arr[start] ;
+            arr[start] = arr[end] ;
+            arr[end] = temp ;
+            start++ ;
+            end-- ;
         }
     }
 
@@ -30,16 +30,16 @@ class LeftRotateD {
         int d = sc.nextInt();
 
         // Handle cases where d > n
-        d = d % n;
+        d = d % n ;
 
         // Step 1: reverse first d elements
-        reverse(arr, 0, d - 1);
+        reverse(arr, 0, d - 1) ;
 
         // Step 2: reverse remaining elements
-        reverse(arr, d, n - 1);
+        reverse(arr, d, n - 1) ;
 
         // Step 3: reverse whole array
-        reverse(arr, 0, n - 1);
+        reverse(arr, 0, n - 1) ;
 
         // Output
         System.out.println("Array after left rotation:");
