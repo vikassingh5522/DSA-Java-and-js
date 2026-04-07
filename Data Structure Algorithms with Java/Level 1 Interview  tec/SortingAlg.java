@@ -1,6 +1,7 @@
 
 import java.util.*;
 
+// this is short the array 
 public class SortingAlg {
 
     public static void main(String[] args){
