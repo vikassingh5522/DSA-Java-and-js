@@ -1,7 +1,8 @@
 
 let prompt = require("prompt-sync")();
 
-let p = prompt("Enter the principle:  ");
+
+let let p = prompt("Enter the principle:  ");
 let r =prompt("Enter the rate o interest : ");
 let t =prompt("Enter Time :  ");
 
