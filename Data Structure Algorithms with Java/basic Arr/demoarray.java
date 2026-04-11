@@ -29,24 +29,27 @@ public class demoarray {
           
          */
 
-        /*
-         * Scanner sc = new Scanner(System.in);
-         * System.out.println("enter the arr size :");
-         * int size = sc.nextInt();
-         * 
-         * int arr[] = new int[size];
-         * for(int i = 0 ; i < arr.length ; i++){
-         * System.out.println(" enter the element : " +i);
-         * arr[i] = sc.nextInt();
-         * }
-         * 
-         * 
-         * for(int a: arr){
-         * System.out.println(a);
-         * }
-         * sc.close();
-         * 
-         */
+
+          /* 
+        
+          Scanner sc = new Scanner(System.in);
+          System.out.println("enter the arr size :");
+          int size = sc.nextInt();
+          
+          int arr[] = new int[size];
+          int n =arr.length ;
+          for(int i = 0 ; i < n -1; i++){
+          System.out.println(" enter the element : " +i);
+          arr[i] = sc.nextInt();
+          }
+          
+          
+          for(int a: arr){
+          System.out.println(a);
+          }
+          sc.close();
+          
+         */ 
 
     }
 }
