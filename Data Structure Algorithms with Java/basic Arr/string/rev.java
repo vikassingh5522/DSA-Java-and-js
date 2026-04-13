@@ -1,29 +1,30 @@
 
-
 public class rev {
 
     public static void main(String[] args) {
+    
 
-        String str = "vikas singh is king ";
+        String name = "vikas ";
 
-        char arr[] = str.toCharArray();
-        int s = 0;
-        int e = str.length() - 1;
-        char temp;
+        char arr[] = name.toCharArray();
+        char tmep ;
+        int st = 0 ;
+        int end = name.length() - 1;
 
-        while (s < e) {
-            temp = arr[s];
-            arr[s] = arr[e];
-            arr[e] = temp;
 
-            s++;
-            e--;
+        while (st< end) {
 
+            tmep = arr[st];
+            arr[st] = arr[end];
+            arr[end] = tmep;
+
+            st++;
+            end--;
+            
         }
 
-        for (int i = 0; i < arr.length; i++) {
+        for(int i = 0 ; i < arr.length ; i++){
             System.out.print(arr[i]);
         }
-
     }
 }
