@@ -11,7 +11,7 @@ public class HappySad {
 
        for(int i = 0 ; i < 4 ; i++){
             double tempH = 0.3 * h + 0.5 * s;
-            double tempS = 0.7 * h + 0.5 * s;  // ✅ fixed
+            double tempS = 0.7 * h + 0.5 * s;  
 
             h = tempH;
             s = tempS;

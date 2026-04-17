@@ -21,7 +21,7 @@ public class ModifierDemo {
          System.out.println(ob);
 
         //pop
-        ob.remove(ob.size()-1);  // ✅
+        ob.remove(ob.size()-1);  
         System.out.println(ob);
 
         //shift

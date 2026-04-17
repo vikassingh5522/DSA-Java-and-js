@@ -1,5 +1,4 @@
 
-
 import java.util.*;
 
 public class ReverseString {
@@ -25,17 +24,11 @@ public class ReverseString {
               start++;
               end--;
             
-          }
-
-
-         
+          }         
           for(char rev :arr ){
             System.out.print(rev);
           }
-
           sc.close();
-
-
      }
 }
 
