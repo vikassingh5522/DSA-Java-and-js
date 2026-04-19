@@ -41,7 +41,6 @@ public class Tosum {
     Total → O(n log n) 
 */
 
-
 /* 
 public class Tosum {
 
@@ -77,33 +76,31 @@ public class Tosum {
 */
 
 // Optimal Approach 
+import java.util.*;
 
+public class Tosum {
 
-
-
-    public class Tosum {
-
-        public static void main(String[] args) {
-            
-            int arr[] ={5 ,2,11,7,15};
-            int tagrat = 9;
-
-            HashMap <Integer , Integer> map = new HashMap<>();
+    public static void main(String[] args) {
         
+        int arr[] = {5, 2, 11, 7, 15};
+        int target = 9;
 
-            for( int i = 0 ; i < arr.length ; i++){
+        HashMap<Integer, Integer> map = new HashMap<>();
 
-                int first = arr[i];
-                int secound = tagrat - first;
+        for (int i = 0; i < arr.length; i++) {
 
-                if(map.containsKey(secound)){
-                    System.out.println(secound +  " " + first );
-                    System.out.println(map.get(secound) + " " + i);
-                    return; 
-                }
+            int first = arr[i];
+            int second = target - first;
 
-            map.put(first, i);
+            if (map.containsKey(second)) {
+                System.out.println("Pair: " + second + " " + first);
+                System.out.println("Indices: " + map.get(second) + " " + i);
+                return;
             }
 
+            map.put(first, i);
         }
+
+        System.out.println("No pair found");
     }
+}
