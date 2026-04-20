@@ -4,6 +4,7 @@
 // Brute force approach. O(n2)
 
 import java.util.*;
+
 /* 
 
 public class Tosum {
@@ -76,7 +77,7 @@ public class Tosum {
 */
 
 // Optimal Approach 
-import java.util.*;
+
 
 public class Tosum {
 

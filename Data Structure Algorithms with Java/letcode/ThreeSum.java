@@ -45,7 +45,7 @@ public class ThreeSum {
 */
 
 // 2 pointer apporach 
-import java.util.*;
+
 
 public class ThreeSum {
 
