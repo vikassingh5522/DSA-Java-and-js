@@ -1,4 +1,6 @@
-public class binaryser {
+public class binaryser 
+// Binary Searching Algorithm
+
 
     public static void main(String[] args) {
 
@@ -10,6 +12,7 @@ public class binaryser {
 
         while (li <= ed) {
 
+            
             int mid = (li + ed) / 2;
 
             if (arr[mid] == target) {
