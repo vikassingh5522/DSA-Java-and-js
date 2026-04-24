@@ -1,6 +1,5 @@
-public class binaryser 
+public class binaryser {
 // Binary Searching Algorithm
-
 
     public static void main(String[] args) {
 

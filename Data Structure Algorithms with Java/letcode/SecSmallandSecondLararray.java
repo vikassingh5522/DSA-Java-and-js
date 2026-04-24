@@ -44,7 +44,7 @@ public class SecSmallandSecondLararray {
     }
 }
 
-/* 
+ 
 //  Optimal solution 
 
 public static void getElement(int arr[], int n) {
@@ -82,5 +82,3 @@ public static void getElement(int arr[], int n) {
     System.out.println("Second smallest: " + secondSmallest);
     System.out.println("Second largest: " + secondLargest);
 }
-
-*/
