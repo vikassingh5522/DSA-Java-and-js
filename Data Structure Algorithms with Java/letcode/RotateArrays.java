@@ -3,7 +3,7 @@ public class RotateArrays {
     public static void rotate(int arr[], int k) {
         int no = arr.length;
 
-        k = k % no;
+        k = k % no;  // print last element 
 
         reverse(arr, 0, no - 1);
         reverse(arr, 0, k - 1);
@@ -28,7 +28,7 @@ public class RotateArrays {
 
         rotate(arr, k);
 
-        // normal for loop
+       
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
